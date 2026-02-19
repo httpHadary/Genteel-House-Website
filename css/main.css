@@ -61,7 +61,8 @@ html{
     text-rendering:optimizeLegibility;
     -webkit-text-rendering:optimizeLegibility;
     -moz-osx-font-smoothing:grayscale;
-    font-kerning:none
+    font-kerning:none;
+    scroll-behavior: smooth;
 }
 
 
@@ -75,7 +76,7 @@ body{
     font-weight:400;
     font-size:100%;
     line-height:1.75;
-    word-wrap:break-word
+    word-wrap:break-word;
 }
 
 .body_lock-scroll{
@@ -6568,7 +6569,10 @@ to{
 }
 
 .section-masthead__overlay{
-    z-index:0
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    pointer-events: none;
 }
 
 .section-masthead__inner{
@@ -9591,3 +9595,89 @@ blockquote{
     padding-right:0
 }
 
+/* Slider Image Zoom in & out */
+.slider__bg {
+  background-size: cover;
+  background-position: center;
+  transition: transform 8s ease;
+}
+
+.swiper-slide-active .slider__bg {
+  transform: scale(1.1);
+}
+
+/* 
+==================================
+# Still Under Development Screen
+=================================
+*/
+
+/* Overlay Background */
+.dev-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Active State */
+.dev-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content Box */
+.dev-overlay__content {
+  background: #111;
+  padding: 60px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.1);
+  transform: translateY(40px);
+  transition: transform 0.4s ease;
+}
+
+.dev-overlay.active .dev-overlay__content {
+  transform: translateY(0);
+}
+
+/* Title */
+.dev-overlay__title {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif; /* match your theme font */
+}
+
+/* Text */
+.dev-overlay__text {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 30px;
+}
+
+/* Close X Button */
+.dev-overlay__close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dev-overlay__close:hover {
+  opacity: 0.6;
+}
