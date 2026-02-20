@@ -9319,32 +9319,32 @@ blockquote{
     color:var(--color-accent-primary-1)
 }
 
-.widget_cassio_menu_inline ul li{
+.widget_genteel_menu_inline ul li{
     display:inline-block;
     margin-bottom:0
 }
 
-.widget_cassio_menu_inline ul li a{
+.widget_genteel_menu_inline ul li a{
     padding:4px
 }
 
-.widget_cassio_menu_inline ul li a:before{
+.widget_genteel_menu_inline ul li a:before{
     display:none
 }
 
 @media screen and (max-width:991px){
-    .widget_cassio_menu_inline .menu{
+    .widget_genteel_menu_inline .menu{
     text-align:center
 }
 
 
 }
 
-.widget_cassio_social ul{
+.widget_genteel_social ul{
     text-align:inherit
 }
 
-.widget_cassio_social ul li{
+.widget_genteel_social ul li{
     display:inline-block;
     margin-bottom:0
 }
@@ -9362,20 +9362,20 @@ blockquote{
     line-height:1
 }
 
-.widget_cassio_logo,.widgetcassio_logo{
+.widget_genteel_logo,.widgetgenteel_logo{
     max-width:360px
 }
 
-.widget_cassio_logo .logo,.widgetcassio_logo .logo{
+.widget_genteel_logo .logo,.widgetgenteel_logo .logo{
     margin-bottom:2em
 }
 
 @media screen and (max-width:991px){
-    .widget_cassio_logo,.widgetcassio_logo{
+    .widget_genteel_logo,.widgetgenteel_logo{
     max-width:100%
 }
 
-.widget_cassio_logo .logo,.widgetcassio_logo .logo{
+.widget_genteel_logo .logo,.widgetgenteel_logo .logo{
     margin-bottom:1em
 }
 
@@ -9680,4 +9680,24 @@ blockquote{
 
 .dev-overlay__close:hover {
   opacity: 0.6;
+}
+
+
+#page-transition {
+  position: fixed;
+  inset: 0;
+  background: #111; /* or your main color */
+  z-index: 9999;
+  pointer-events: none;
+
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#page-transition.loaded {
+  opacity: 0;
+}
+
+#page-transition.active {
+  opacity: 1;
 }

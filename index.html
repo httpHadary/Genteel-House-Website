@@ -25,8 +25,9 @@
   </head>
 
   <body>
-    <div data-barba="wrapper">
+    <div id="page-transition"></div>
 
+    <div>
       <!-- PAGE PRELOADER -->
       <div class="preloader js-preloader">
 
@@ -70,25 +71,23 @@
               <ul class="menu">
                 <li><a href="#">Homepages</a></li>
                 
-                <li><a href="#" class="under-development">Portfolio</a></li>
+                <li><a href="pages/projects/projects.html">Projects</a></li>
 
-                <li class="menu-item-has-children"><a href="#some-of-our-works">Projects</a>
-                  <ul class="sub-menu">
-                    <li><a href="#" class="under-development">Luxury Touch</a></li>
-                    <li><a href="#" class="under-development">Platinum Perfection</a></li>
-                    <li><a href="#" class="under-development">Royal King Suite</a></li>
-                    <li><a href="#" class="under-development">Elegant Apartment</a></li>
-                    <li><a href="#" class="under-development">European Style</a></li>
-                    <li><a href="#" class="under-development">Loft Apartment</a></li>
-                  </ul>
-                </li>
-
-                <li class="menu-item-has-children"><a href="#our-services">Services</a>
+                <li class="menu-item-has-children">
+                  <a href="#our-services">Services</a>
                   <ul class="sub-menu">
                     <li><a href="#" class="under-development">Interior Design</a></li>
                     <li><a href="#" class="under-development">Exterior Design</a></li>
                     <li><a href="#" class="under-development">Furnishing Services</a></li>
                     <li><a href="#" class="under-development">Supervision & Execution</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#" class="under-development">Hotel Services</a>
+
+                      <ul class="sub-menu">
+                        <li><a href="#" class="under-development">Furniture Department</a></li>
+                        <li><a href="#" class="under-development">Care Department</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
 
@@ -125,238 +124,93 @@
             
             <ul class="menu-overlay js-menu-overlay">
 
-              <li class="menu-item-has-children current-menu-ancestor">
+              <li>
                 <a href="#" data-letter="H">
                   <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                    Homepages
+                    Homepage
                   </div>
                 </a>
-                
-                <ul class="sub-menu">
-                  <li class="menu-item-has-children current-menu-ancestor">
-                    <a href="#" class="under-development" data-letter="L">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Landing Pages
-                      </div>
-                    </a>
-
-                    <ul class="sub-menu">
-                      
-                      <li>
-                        <a href="#" class="under-development" data-letter="L" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Landing Page 001
-                          </div>
-                        </a>
-                      </li>
-
-                      <li class="current-menu-item">
-                        <a href="#" class="under-development" data-letter="L" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Landing Page 002
-                          </div>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                  </li>
-
-                  <li class="menu-item-has-children">
-                    <a href="#" class="under-development" data-letter="F">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Fullscreen Sliders
-                      </div>
-                    </a>
-
-                    <ul class="sub-menu">
-                      <li>
-                        <a href="#" class="under-development" data-letter="H" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Homepage Slider 001
-                          </div>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="under-development" data-letter="H" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Homepage Slider 002
-                          </div>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="under-development" data-letter="H" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Homepage Slider 003
-                          </div>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="under-development" data-letter="H" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Homepage Slider 004
-                          </div>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="under-development" data-letter="H" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Homepage Slider 005
-                          </div>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="under-development" data-letter="H" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Homepage Slider 006
-                          </div>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="under-development" data-letter="H" data-pjax-link="overlayMenu">
-                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                            Homepage Slider 007
-                          </div>
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
               </li>
 
-              <li class="menu-item-has-children">
-                <a href="#" class="under-development" data-letter="P">
-                  <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                    Portfolio
-                  </div>
-                </a>
-
-                <ul class="sub-menu">
-
-                  <li>
-                    <a href="#" class="under-development" data-letter="L" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Luxury Touch
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="under-development" data-letter="P" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Platinum Perfection
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="under-development" data-letter="R" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Royal King Suite
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="under-development" data-letter="E" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Elegant Apartment
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="under-development" data-letter="E" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        European Style
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" class="under-development" data-letter="L" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Loft Apartment
-                      </div>
-                    </a>
-                  </li>
-
-                </ul>
-              </li>
-
-              <li class="menu-item-has-children">
-                <a href="#" class="under-development" data-letter="P">
+              <li>
+                <a href="pages/projects/projects.html" data-letter="P">
                   <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
                     Projects
                   </div>
                 </a>
-
-                <ul class="sub-menu">
-
-                  <li>
-                    <a href="projects-grid-1.html" data-letter="P" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Projects 001
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="projects-grid-2.html" data-letter="P" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Projects 002
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="projects-grid-3.html" data-letter="P" data-pjax-link="overlayMenu">
-                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Projects 003
-                      </div>
-                    </a>
-                  </li>
-
-                </ul>
               </li>
 
               <li class="menu-item-has-children">
-                <a href="#" data-letter="P">
+                <a href="#" data-letter="S">
                   <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                    Pages
+                    Services
                   </div>
                 </a>
 
                 <ul class="sub-menu">
-
                   <li>
-                    <a href="blog.html" data-letter="B" data-pjax-link="overlayMenu">
+                    <a href="#" class="under-development" data-letter="I" data-pjax-link="overlayMenu">
                       <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Blog
+                        Interior Design
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#" class="under-development" data-letter="E" data-pjax-link="overlayMenu">
+                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
+                        Exterior Design
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#" class="under-development" data-letter="F" data-pjax-link="overlayMenu">
+                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
+                        Furnishing Services
                       </div>
                     </a>
                   </li>
 
                   <li>
-                    <a href="404.html" data-letter="P" data-pjax-link="overlayMenu">
+                    <a href="#" class="under-development" data-letter="S" data-pjax-link="overlayMenu">
                       <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
-                        Page 404
+                        Supervision & Execution
                       </div>
                     </a>
+                  </li>
+                  
+                  <li class="menu-item-has-children">
+                    <a href="#" data-letter="H" data-pjax-link="overlayMenu">
+                      <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
+                        Hotel Services
+                      </div>
+                    </a>
+
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#" class="under-development" data-letter="F" data-pjax-link="overlayMenu">
+                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
+                            Furniture Department
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="under-development" data-letter="C" data-pjax-link="overlayMenu">
+                          <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
+                            Care Department
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
 
                 </ul>
               </li>
 
               <li>
-                <a href="about.html" data-letter="A" data-pjax-link="overlayMenu">
+                <a href="#" class="under-development" data-letter="A" data-pjax-link="overlayMenu">
                   <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
                     About
                   </div>
@@ -364,7 +218,7 @@
               </li>
 
               <li>
-                <a href="contacts.html" data-letter="C" data-pjax-link="overlayMenu">
+                <a href="#" class="under-development" data-letter="C" data-pjax-link="overlayMenu">
                   <div class="menu-overlay__item-wrapper js-text-to-fly split-text js-split-text" data-split-text-type="lines, words, chars">
                     Contacts
                   </div>
@@ -447,7 +301,7 @@
       </header>
       <!-- - PAGE HEADER -->
 
-      <div class="page-wrapper bg-light" data-barba="container">
+      <div class="page-wrapper bg-light">
         <main class="page-wrapper__content">
 
           <!-- section INTRO -->
@@ -559,7 +413,7 @@
                     <div class="figure-feature__corner figure-feature__corner_bottom"></div>
                     <a href="#" class="under-development">
                       <div class="figure-feature__icon lnr">
-                        <img src="img/general/landing-page/services-interior.jpeg" alt="Interior Design">
+                        <img src="img/general/landing-page/services-interior.jpg" alt="Interior Design" width="1200" height="800">
                       </div>
                       <div class="figure-feature__header">
                         <h5 class="figure-feature__heading">Interior Design</h5>
@@ -574,7 +428,7 @@
                     <div class="figure-feature__corner figure-feature__corner_bottom"></div>
                     <a href="#" class="under-development">
                       <div class="figure-feature__icon lnr">
-                        <img src="img/general/landing-page/services-exterior.jpg" alt="Interior Design">
+                        <img src="img/general/landing-page/services-exterior.jpg" alt="Exterior Design" width="1200" height="800">
                       </div>
                       <div class="figure-feature__header">
                         <h5 class="figure-feature__heading">Exterior Design</h5>
@@ -589,7 +443,7 @@
                     <div class="figure-feature__corner figure-feature__corner_bottom"></div>
                     <a href="#" class="under-development">
                       <div class="figure-feature__icon lnr">
-                        <img src="img/general/landing-page/services-furnuture.jpeg" alt="Interior Design">
+                        <img src="img/general/landing-page/services-furnuture.jpg" alt="Furniture Design" width="1200" height="800">
                       </div>
                       <div class="figure-feature__header">
                         <h5 class="figure-feature__heading">Furnishing Services</h5>
@@ -604,10 +458,40 @@
                     <div class="figure-feature__corner figure-feature__corner_bottom"></div>
                     <a href="#" class="under-development">
                       <div class="figure-feature__icon lnr">
-                        <img src="img/general/landing-page/services-supervision.jpg" alt="Interior Design">
+                        <img src="img/general/landing-page/services-supervision.jpg" alt="Supervision & Execution" width="1200" height="800">
                       </div>
                       <div class="figure-feature__header">
                         <h5 class="figure-feature__heading">Supervision & Execution</h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid__item grid__item_desktop-6 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                  <div class="figure-feature">
+                    <div class="figure-feature__corner figure-feature__corner_top"></div>
+                    <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                    <a href="#" class="under-development">
+                      <div class="figure-feature__icon lnr">
+                        <img src="img/general/landing-page/services-hotel-furniture.jpg" alt="Hotel - Furniture Department" width="1200" height="800">
+                      </div>
+                      <div class="figure-feature__header">
+                        <h5 class="figure-feature__heading">Hotel - Furniture Department</h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid__item grid__item_desktop-6 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-3 js-grid__item">
+                  <div class="figure-feature">
+                    <div class="figure-feature__corner figure-feature__corner_top"></div>
+                    <div class="figure-feature__corner figure-feature__corner_bottom"></div>
+                    <a href="#" class="under-development">
+                      <div class="figure-feature__icon lnr">
+                        <img src="img/general/landing-page/services-care.jpg" alt="Hotel - Care Department" width="1200" height="800">
+                      </div>
+                      <div class="figure-feature__header">
+                        <h5 class="figure-feature__heading">Hotel - Care Department</h5>
                       </div>
                     </a>
                   </div>
@@ -661,7 +545,7 @@
                     <div class="figure-portfolio-big__wrapper-img">
                       <div class="figure-portfolio-big__wrapper-img-inner">
                         <div class="lazy">
-                          <img data-src="img/general/landing-page/portfolio-interior-2.jpg" src="#" alt="">
+                          <img data-src="img/general/landing-page/portfolio-interior-2.jpg" src="#" alt="" width="1920" height="1080">
                         </div>
                       </div>
                     </div>
@@ -679,7 +563,7 @@
                     <div class="figure-portfolio-big__wrapper-img">
                       <div class="figure-portfolio-big__wrapper-img-inner">
                         <div class="lazy">
-                          <img data-src="img/general/landing-page/portfolio-exterior-1.jpg" src="#" alt="">
+                          <img data-src="img/general/landing-page/portfolio-exterior-1.jpg" src="#" alt="" width="1920" height="1080">
                         </div>
                       </div>
                     </div>
@@ -697,7 +581,7 @@
                     <div class="figure-portfolio-big__wrapper-img">
                       <div class="figure-portfolio-big__wrapper-img-inner">
                         <div class="lazy">
-                          <img data-src="img/general/landing-page/portfolio-exterior-2.jpg" src="#" alt="">
+                          <img data-src="img/general/landing-page/portfolio-exterior-2.jpg" src="#" alt="" width="1920" height="1080">
                         </div>
                       </div>
                     </div>
@@ -715,7 +599,7 @@
                     <div class="figure-portfolio-big__wrapper-img">
                       <div class="figure-portfolio-big__wrapper-img-inner">
                         <div class="lazy">
-                          <img data-src="img/general/landing-page/portfolio-furnature-1.jpg" src="#" alt="">
+                          <img data-src="img/general/landing-page/portfolio-furnature-1.jpg" src="#" alt="" width="1920" height="1080">
                         </div>
                       </div>
                     </div>
@@ -733,7 +617,7 @@
                     <div class="figure-portfolio-big__wrapper-img">
                       <div class="figure-portfolio-big__wrapper-img-inner">
                         <div class="lazy">
-                          <img data-src="img/general/landing-page/portfolio-furnature-2.jpg" src="#" alt="">
+                          <img data-src="img/general/landing-page/portfolio-furnature-2.jpg" src="#" alt="" width="1920" height="1080">
                         </div>
                       </div>
                     </div>
@@ -782,7 +666,7 @@
             <div class="footer__row row">
 
               <div class="col-lg-4 text-left footer__column">
-                <section class="widget widget_cassio_logo">
+                <section class="widget widget_genteel_logo">
                   <a class="logo" href="#">
                     <div class="logo__text">
                       <span class="logo__text-title">Genteel House</span>
@@ -793,7 +677,7 @@
               </div>
 
               <div class="col-lg-4 text-center footer__column">
-                <section class="widget widget_cassio_social">
+                <section class="widget widget_genteel_social">
                   <ul class="social">
                     <li class="social__item"><a class="fa fa-facebook-f" href="https://www.facebook.com/house7383" target="_blank"></a></li>
                     <li class="social__item"><a class="fa fa-twitter" href="https://twitter.com/house_ksa" target="_blank"></a></li>
@@ -822,7 +706,7 @@
           <div class="footer__area-secondary">
             <div class="footer__row row justify-content-between align-items-center">
               <div class="col-lg-6 order-lg-2 footer__column text-right">
-                <section class="widget widget_cassio_menu_inline">
+                <section class="widget widget_genteel_menu_inline">
                   <ul class="menu">
                     <li><a href="#" class="under-development">Terms of Usage</a>
                     </li>
@@ -835,7 +719,7 @@
               </div>
 
               <div class="col-lg-6 order-lg-1 footer__column text-left">
-                <section class="widget widget_cassio_copyright">
+                <section class="widget widget_genteel_copyright">
                   <small class="copyright">Copyright © 2026 Al Bayt Al Motamayez. All rights reserved.</small>
                 </section>
               </div>

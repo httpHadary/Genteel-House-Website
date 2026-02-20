@@ -56,3 +56,39 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const transition = document.getElementById("page-transition");
+
+  // Fade out when page loads
+  setTimeout(() => {
+    transition.classList.add("loaded");
+  }, 100);
+
+  // Intercept all internal links
+  document.querySelectorAll("a[href]").forEach(link => {
+
+    const url = link.getAttribute("href");
+
+    // Ignore external, anchors, mail, tel
+    if (
+      url.startsWith("http") ||
+      url.startsWith("#") ||
+      url.startsWith("mailto:") ||
+      url.startsWith("tel:")
+    ) return;
+
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      transition.classList.remove("loaded");
+      transition.classList.add("active");
+
+      setTimeout(() => {
+        window.location.href = url;
+      }, 400);
+    });
+  });
+
+});
